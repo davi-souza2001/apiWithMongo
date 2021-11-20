@@ -69,3 +69,24 @@ async function getPersons() {
 
 // Delete persons
 
+async function getPerson(name) {
+    const person = await Person.find({name: name}).exec();
+    if(person.length === 0) {
+        console.log("Esta pessoa não existe")
+    } else{
+        console.log(person)
+    }
+}
+
+// getPerson("Pedro")
+
+// Person.deleteOne({ name: "Pedro" }).exec();
+
+// getPerson("Pedro")
+
+// Update datas
+
+// getPerson("Luisa")
+// Person.updateOne({ name: "Luisa"}, {work: "Fazendo adm"}).exec()
+// getPerson("Luisa")
+
