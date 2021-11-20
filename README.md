@@ -1,0 +1,1 @@
+<h1>A little connection mongo with node using mongoose</h1>
